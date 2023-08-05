@@ -40,7 +40,6 @@ h1, h2, h3, h4, h5, h6, p{
 .link {
   text-decoration: none;
   color: currentColor;
-  font-style: normal;
 }
 
 img{
@@ -68,6 +67,12 @@ img{
   |============================
 */
 /* logo */
+.header-container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
 .logo-color-iris{
     color: var(--iris);
     font-family: "Raleway", sans-serif;
@@ -92,6 +97,12 @@ img{
     text-decoration: none;
 }
 
+.logo-nav{
+display: flex;
+align-items: center;
+margin-right: 76px;
+}
+
 /* Navigation */
 .nav-link-portfolio{
 color: var(--navyblue);
@@ -106,6 +117,14 @@ text-decoration: none;
   color: var(--ocean);
 }
 
+.nav-link{
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  gap: 40px;
+  align-items: center;
+}
+
 .address-header-styl{
   font-style: normal;
   text-decoration: none;
@@ -118,6 +137,12 @@ text-decoration: none;
 .address-header-styl:hover,
 .address-header-styl:focus{
   color: var(--ocean);
+}
+
+.address-link{
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
 
@@ -174,7 +199,9 @@ text-decoration: none;
 
 .section-hero-bg{
   background-color: var(--navyblue);
+  padding: 188px 0;
 }
+
 
 .style-button-hero{
   font-size: 16px;
@@ -184,6 +211,16 @@ text-decoration: none;
   font-weight: 500;
   background-color: var(--iris);
 }
+
+.btn{
+display: block;
+padding: 16px 32px;
+border-radius: 4px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
 
 .style-button-hero:hover,
 .style-button-hero:focus{
@@ -197,6 +234,16 @@ background-color: var(--ocean);
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--white);
+}
+
+.hero-h{
+  display: block;
+  padding-top: 188px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 496px;
+
 }
 
 /**

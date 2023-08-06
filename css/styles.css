@@ -143,12 +143,9 @@ text-decoration: none;
 .address-link {
   display: flex;
   gap: 40px;
-  align-items: center;
-}
-
-.address-iteams {
   padding: 24px 0;
 }
+
 
 
 
@@ -179,7 +176,6 @@ text-decoration: none;
 
 .btn-link {
   display: flex;
-  flex-wrap: nowrap;
   gap: 24px;
   justify-content: center;
   margin-bottom: 72px;
@@ -192,7 +188,6 @@ text-decoration: none;
 
 .btn-section {
 padding-top: 96px;
-padding-bottom: 120px;
 }
 
 
@@ -206,10 +201,6 @@ padding-bottom: 120px;
 .portfolio-iteams {
   border: 1px solid var(--cornflower);
   display: flex;
-  width: 360px;
-  height: 420px;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .portfolio-text {
@@ -247,8 +238,8 @@ display: flex;
 flex-wrap: wrap;
 row-gap: 48px;
 column-gap: 24px;
-justify-content: space-between;
 padding: 0;
+margin-bottom: 120px;
 }
 
 .carts-set-iteam {
@@ -357,7 +348,6 @@ overflow: hidden;
 
 .strategy-iteams {
   display: flex;
-  flex-wrap: nowrap;
   gap: 24px;
 }
 
@@ -377,7 +367,6 @@ width: calc((100% - 72px) / 4);
 
 .doing-iteams {
   display: flex;
-  flex-wrap: nowrap;
   margin-bottom: 120px;
   gap: 24px;
 }
@@ -402,7 +391,6 @@ padding-bottom: 120px;
 
 .team-iteams {
   display: flex;
-  flex-wrap: nowrap;
   gap: 24px;
 }
 

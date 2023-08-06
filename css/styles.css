@@ -99,6 +99,9 @@ border-bottom: 1px solid var(--cornflower);
 .logo-nav{
 display: flex;
 align-items: center;
+}
+
+.lg-header{
 margin-right: 76px;
 }
 
@@ -118,10 +121,9 @@ text-decoration: none;
 
 .nav-link{
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
   gap: 40px;
   align-items: center;
+  padding: 24px 0;
 }
 
 .address-header-styl{
@@ -184,7 +186,6 @@ text-decoration: none;
 }
 
 .btn{
-  display: flex;
   padding: 12px 24px;
   border: 1px solid var(--cornflower);
 }
@@ -213,6 +214,7 @@ padding-bottom: 120px;
 
 .portfolio-text{
   padding: 32px 16px;
+  border: 1px solid var(--cornflower);
   border-top: none;
 }
 
@@ -222,7 +224,10 @@ padding-bottom: 120px;
   letter-spacing: 0.02em;
   font-weight: 500;
   color: var(--navyblue);
-  margin-bottom: 8px;
+}
+
+.title-ptf{
+margin-bottom: 8px;
 }
 
 .portfolio-section-p {
@@ -463,4 +468,5 @@ padding: 100px 0;
 .logo-footer {
   display: inline-block;
   align-items: center;
+  margin-bottom: 16px;
 }

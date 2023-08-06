@@ -161,6 +161,8 @@ text-decoration: none;
   line-height: 1.5;
   letter-spacing: 0.04em;
   background-color: var(--cloud);
+
+  border: 1px solid var(--cornflower)
 }
 
 .style-button-portfolio:hover,
@@ -168,6 +170,23 @@ text-decoration: none;
   color: var(--white);
   background-color: var(--ocean);
 }
+
+.btn-link{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.btn{
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 /**
   |============================
@@ -180,6 +199,10 @@ text-decoration: none;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+
+    display: flex;
+    margin-bottom: 32px;
+    padding-left: 16px;
 }
 
 .portfolio-h-two{
@@ -188,8 +211,50 @@ text-decoration: none;
   letter-spacing: 0.02em;
   font-weight: 500;
   color: var(--navyblue);
+
+  display: flex;
+  padding-left: 16px;
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
 
+.portfolio-iteams{
+  border: 1px solid var(--cornflower);
+
+  display: flex;
+  width: 360px;
+  height: 420px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.portfolio-box{
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 120px;
+justify-content: space-between;
+}
+
+
+/**
+  |============================
+  | Carts set
+  |============================
+*/
+
+.carts-set{
+display: flex;
+flex-wrap: wrap;
+row-gap: 48px;
+column-gap: 24px;
+justify-content: space-between;
+padding: 0;
+}
+
+.carts-set-iteam{
+flex-basis: calc((100%-24px*2) 3);
+}
 
 /**
   |============================
@@ -276,19 +341,25 @@ background-color: var(--ocean);
   margin-bottom: 72px;
 }
 
+.strategy-iteams {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 24px;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+/**
+  |============================
+  | Doing section
+  |============================
+*/
+
 .doing-iteams{
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   margin-bottom: 120px;
-}
-
-.strategy-iteams{
-display: flex;
-flex-wrap: nowrap;
-column-gap: 24px;
-justify-content: space-between;
-margin-bottom: 120px;
 }
 
 /**
@@ -334,7 +405,11 @@ margin-bottom: 120px;
 */
 .footer-bg-color{
   background-color: var(--navyblue);
-  padding: 140 0 100 0;
+}
+
+.container-ft{
+display: flex;
+align-items: center;
 }
 
 .logo-color-cloud{
@@ -353,10 +428,13 @@ margin-bottom: 120px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   display: flex;
+  width: 264px;
+  margin-bottom: 100px;
+  margin-top: 17.5px;
 }
 
 .logo-footer {
-  display: flex;
+  display: inline-block;
   align-items: center;
   margin-top: 101.5px;
 }

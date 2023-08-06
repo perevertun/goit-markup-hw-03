@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- Fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,15 +11,15 @@
       rel="stylesheet"
     />
     <link
-      rel="preconnect"
-      href="https://cdnjs.com/libraries/modern-normalize"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Portfolio</title>
+    <title>Webstudio</title>
   </head>
   <body>
     <!-- Header section -->
-    <header>
+    <header class="border">
       <div class="header-container container">
         <nav class="logo-nav list">
           <a href="./index.html" class="link logo-color-iris"
@@ -61,9 +61,9 @@
     </header>
     <main>
       <!-- Button section -->
-      <section>
+      <section class="btn-section">
         <div class="container">
-          <h1 hidden>Effective Solutions for Your Business</h1>
+          <h1 class="visually-hidden">Effective Solutions for Your Business</h1>
           <ul class="btn-link list">
             <li>
               <button type="button" class="btn style-button-portfolio">
@@ -91,11 +91,9 @@
               </button>
             </li>
           </ul>
-        </div>
 
-        <!-- Portfolio section -->
-        <div class="portfolio-box container">
-          <ul class="carts-set list">
+          <!-- Portfolio section -->
+          <ul class="portfolio-box carts-set list">
             <li class="portfolio-iteams carts-set-iteam">
               <a href="" class="link">
                 <img
@@ -103,9 +101,10 @@
                   alt="Banking App Interface Concept"
                   width="360"
                 />
-                <h2 class="portfolio-h-two">Banking App Interface Concept</h2>
-                <p class="portfolio-section-p">App</p></a
-              >
+                <div class="portfolio-text">
+                  <h2 class="portfolio-h-two">Banking App Interface Concept</h2>
+                  <p class="portfolio-section-p">App</p></a>
+                </div>
             </li>
             <li class="portfolio-iteams carts-set-iteam">
               <a href="" class="link">
@@ -114,9 +113,11 @@
                   alt="Pay by phone"
                   width="360"
                 />
-                <h2 class="portfolio-h-two">Cashless Payment</h2>
-                <p class="portfolio-section-p">Marketing</p></a
-              >
+                <div class="portfolio-text">
+                  <h2 class="portfolio-h-two">Cashless Payment</h2>
+                  <p class="portfolio-section-p">Marketing</p></a
+                  >
+                </div>
             </li>
             <li class="portfolio-iteams carts-set-iteam">
               <a href="" class="link">
@@ -125,9 +126,11 @@
                   alt="Computer and phone"
                   width="360"
                 />
-                <h2 class="portfolio-h-two">Meditation App</h2>
-                <p class="portfolio-section-p">App</p></a
-              >
+                <div class="portfolio-text">
+                  <h2 class="portfolio-h-two">Meditation App</h2>
+                  <p class="portfolio-section-p">App</p></a
+                  >
+                </div>
             </li>
             <li class="portfolio-iteams carts-set-iteam">
               <a href="" class="link">
@@ -136,9 +139,11 @@
                   alt="Car steering wheel"
                   width="360"
                 />
-                <h2 class="portfolio-h-two">Taxi Service</h2>
-                <p class="portfolio-section-p">Marketing</p></a
-              >
+                <div class="portfolio-text">
+                  <h2 class="portfolio-h-two">Taxi Service</h2>
+                  <p class="portfolio-section-p">Marketing</p></a
+                >
+                </div>
             </li>
             <li class="portfolio-iteams carts-set-iteam">
               <a href="" class="link">
@@ -147,8 +152,10 @@
                   alt="Various illustrations on the phone screen"
                   width="360"
                 />
-                <h2 class="portfolio-h-two">Screen Illustrations</h2>
-                <p class="portfolio-section-p">Design</p>
+                <div class="portfolio-text">
+                  <h2 class="portfolio-h-two">Screen Illustrations</h2>
+                  <p class="portfolio-section-p">Design</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-iteams carts-set-iteam">
@@ -158,8 +165,10 @@
                   alt="A girl in a yellow sweater in glasses and a phone in her hand"
                   width="360"
                 />
-                <h2 class="portfolio-h-two">Online Courses</h2>
-                <p class="portfolio-section-p">Marketing</p>
+                <div class="portfolio-text">
+                  <h2 class="portfolio-h-two">Online Courses</h2>
+                  <p class="portfolio-section-p">Marketing</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-iteams carts-set-iteam">
@@ -169,8 +178,10 @@
                   alt="Instagram Stories Concept"
                   width="360"
                 />
-                <h2 class="portfolio-h-two">Instagram Stories Concept</h2>
-                <p class="portfolio-section-p">Design</p>
+                <div class="portfolio-text">
+                  <h2 class="portfolio-h-two">Instagram Stories Concept</h2>
+                  <p class="portfolio-section-p">Design</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-iteams carts-set-iteam">
@@ -180,8 +191,10 @@
                   alt="A woman carries a net bag with vegetables"
                   width="360"
                 />
-                <h2 class="portfolio-h-two">Organic Food</h2>
-                <p class="portfolio-section-p">Web Site</p>
+                <div class="portfolio-text">
+                  <h2 class="portfolio-h-two">Organic Food</h2>
+                  <p class="portfolio-section-p">Web Site</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-iteams carts-set-iteam">
@@ -191,8 +204,10 @@
                   alt="The barista prepares coffee"
                   width="360"
                 />
-                <h2 class="portfolio-h-two">Fresh Coffee</h2>
-                <p class="portfolio-section-p">Web Site</p>
+                <div class="portfolio-text">
+                  <h2 class="portfolio-h-two">Fresh Coffee</h2>
+                  <p class="portfolio-section-p">Web Site</p>
+                </div>
               </a>
             </li>
           </ul>

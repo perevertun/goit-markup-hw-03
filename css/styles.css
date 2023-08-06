@@ -56,18 +56,20 @@ img{
   padding-right: 15px;
 }
 
-
-
 /**
   |============================
   | Header section
   |============================
 */
-/* logo */
+
 .header-container{
 display: flex;
 align-items: center;
 justify-content: space-between;
+}
+
+.border{
+border-bottom: 1px solid var(--cornflower);
 }
 
 .logo-color-iris{
@@ -140,6 +142,7 @@ text-decoration: none;
   display: flex;
   gap: 40px;
   align-items: center;
+  padding: 24px 0;
 }
 
 
@@ -159,13 +162,14 @@ text-decoration: none;
   letter-spacing: 0.04em;
   background-color: var(--cloud);
 
-  border: 1px solid var(--cornflower)
+  border: 1px solid var(--cornflower);
 }
 
 .style-button-portfolio:hover,
 .style-button-portfolio:focus{
   color: var(--white);
   background-color: var(--ocean);
+  border: 1px solid transparent;
 }
 
 .btn-link{
@@ -183,6 +187,11 @@ text-decoration: none;
   align-items: center;
 }
 
+.btn-section{
+padding-top: 96px;
+padding-bottom: 120px;
+}
+
 
 
 /**
@@ -196,10 +205,6 @@ text-decoration: none;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-
-    display: flex;
-    margin-bottom: 32px;
-    padding-left: 16px;
 }
 
 .portfolio-h-two{
@@ -208,11 +213,7 @@ text-decoration: none;
   letter-spacing: 0.02em;
   font-weight: 500;
   color: var(--navyblue);
-
-  display: flex;
-  padding-left: 16px;
-  margin-top: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .portfolio-iteams{
@@ -223,16 +224,13 @@ text-decoration: none;
   height: 420px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
 }
 
-.portfolio-box{
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 120px;
-justify-content: space-between;
+.portfolio-text{
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border: none;
 }
-
 
 /**
   |============================
@@ -250,7 +248,7 @@ padding: 0;
 }
 
 .carts-set-iteam{
-flex-basis: calc((100%-24px*2) 3);
+width: calc((100% - 48px) / 3);
 }
 
 /**
@@ -262,7 +260,6 @@ flex-basis: calc((100%-24px*2) 3);
 .section-hero-bg{
   background-color: var(--navyblue);
   padding: 188px 0;
-  margin-bottom: 120px;
 }
 
 
@@ -281,6 +278,9 @@ padding: 16px 32px;
 border-radius: 4px;
 margin-left: auto;
 margin-right: auto;
+min-width: 169px;
+height: 56px;
+border: none;
 }
 
 .style-button-hero:hover,
@@ -302,8 +302,7 @@ background-color: var(--ocean);
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
-  width: 496px;
-
+  max-width: 496px;
 }
 
 /**
@@ -323,6 +322,7 @@ background-color: var(--ocean);
   letter-spacing: 0.02em;
   font-weight: 500;
   color: var(--navyblue);
+  margin-bottom: 8px;
 }
 
 .style-h-two{
@@ -338,12 +338,24 @@ background-color: var(--ocean);
   margin-bottom: 72px;
 }
 
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
 .strategy-iteams {
   display: flex;
   flex-wrap: nowrap;
-  column-gap: 24px;
+  gap: 24px;
   justify-content: space-between;
-  margin-bottom: 120px;
+}
+
+.strategy-section{
+  padding: 120px 0;
+}
+
+.str-style{
+flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 /**
@@ -355,8 +367,17 @@ background-color: var(--ocean);
 .doing-iteams{
   display: flex;
   flex-wrap: nowrap;
+  gap: 24px;
   justify-content: space-between;
   margin-bottom: 120px;
+}
+
+.doing-style-list{
+flex-basis: calc((100% - 3 * 16px) / 3);
+}
+
+.doing-box{
+  padding-bottom: 120px;
 }
 
 /**
@@ -372,27 +393,28 @@ background-color: var(--ocean);
 .team-iteams {
   display: flex;
   flex-wrap: nowrap;
+  gap: 24px;
   justify-content: space-between;
 }
 
 .team-bg-white {
   background-color: var(--white);
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.img{
-  margin-bottom: 32px;
-}
 
 .name{
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 8px;
 }
 
 .text{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 32px;
+    text-align: center;
+}
+
+.title-team{
+  padding: 32px 0;
 }
 
 /**
@@ -407,6 +429,7 @@ background-color: var(--ocean);
 .container-ft{
 display: flex;
 align-items: center;
+padding: 100px 0;
 }
 
 .logo-color-cloud{
@@ -426,12 +449,10 @@ align-items: center;
   letter-spacing: 0.02em;
   display: flex;
   width: 264px;
-  margin-bottom: 100px;
   margin-top: 17.5px;
 }
 
 .logo-footer {
   display: inline-block;
   align-items: center;
-  margin-top: 101.5px;
 }

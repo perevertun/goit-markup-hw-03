@@ -124,6 +124,7 @@ text-decoration: none;
   display: flex;
   gap: 40px;
   align-items: center;
+  padding: 24px 0;
 }
 
 .address-header-styl {
@@ -178,7 +179,8 @@ text-decoration: none;
   display: flex;
   gap: 24px;
   justify-content: center;
-  margin-bottom: 72px;
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .btn {
@@ -186,26 +188,16 @@ text-decoration: none;
   border: 1px solid var(--cornflower);
 }
 
-.btn-section {
-padding-top: 96px;
-}
-
-
-
 /**
   |============================
   | Portfolio section
   |============================
 */
 
-.portfolio-iteams {
-  border: 1px solid var(--cornflower);
-  display: flex;
-}
-
 .portfolio-text {
   padding: 32px 16px;
   border-top: none;
+  border: 1px solid var(--cornflower);
 }
 
 .portfolio-h-two {
@@ -356,7 +348,7 @@ overflow: hidden;
 }
 
 .str-style {
-width: calc((100% - 72px) / 4);
+width: calc((100% - 3 * 24px) / 4);
 }
 
 /**
@@ -372,7 +364,7 @@ width: calc((100% - 72px) / 4);
 }
 
 .doing-style-list {
-width: calc((100% - 48px) / 3);
+width: calc((100% - 24px) / 3);
 }
 
 .doing-box {
@@ -396,7 +388,7 @@ padding-bottom: 120px;
 
 .team-bg-white {
   background-color: var(--white);
-  width: calc((100% - 72px) / 4);
+  width: calc((100% - 24px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 

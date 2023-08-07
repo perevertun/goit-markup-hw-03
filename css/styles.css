@@ -185,8 +185,9 @@ padding: 24px 0;
 .btn-section{
 padding-top: 96px;
 padding-bottom: 120px;
-border-top: none;
 }
+
+
 /**
   |============================
   | Portfolio section
@@ -196,6 +197,7 @@ border-top: none;
 .portfolio-text {
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
+  border-top: none;
 }
 
 .portfolio-h-two {

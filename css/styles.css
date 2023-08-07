@@ -165,6 +165,7 @@ padding: 24px 0;
 
   border: 1px solid var(--cornflower);
   padding: 12px 24px;
+  border-radius: 4px;
 }
 
 .style-button-portfolio:hover,
@@ -184,12 +185,8 @@ padding: 24px 0;
 .btn-section{
 padding-top: 96px;
 padding-bottom: 120px;
-}
-
-.btn-box{
 border-top: none;
 }
-
 /**
   |============================
   | Portfolio section
